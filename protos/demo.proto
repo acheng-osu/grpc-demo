@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+service Demo {
+    rpc SendMessage (messageInput) returns (messageOutput) {}
+}
+
+message messageInput {}
+
+message messageOutput {
+    string msg = 1;
+}
